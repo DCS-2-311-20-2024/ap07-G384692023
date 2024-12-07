@@ -64,7 +64,7 @@ function init() {
   let xwing; // モデルを格納する変数
   function loadModel() { // モデル読み込み関数の定義
 
-const loader = new GLTFLoader(); loader.load(
+  const loader = new GLTFLoader(); loader.load(
   "xwing.glb", // EJV
     (gltf)=> { // 読み込み終了時に実行される関数
           xwing =  gltf.scene; // EYF 
@@ -144,7 +144,7 @@ const loader = new GLTFLoader(); loader.load(
   plane.rotation.x = -Math.PI / 2;
   plane.position.y = -5;
   scene.add(plane);
- 
+  
   // 自動操縦コースの設定
   // 制御点
   const controlPoints = [
